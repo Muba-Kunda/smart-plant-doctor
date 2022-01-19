@@ -1,0 +1,154 @@
+[
+  {
+    name: 'Tomato ',
+    soiltype: 'well-drained, sandy, or red loam soils',
+    ph: 'Acidic , ph level should be 6.0 to 7.0',
+    sunexposure: "Once your tomato seedlings are five to six inches in length, it's time to take them out of their sma",
+    temperature: '21°°-24°C',
+    humidity: 'Low, 50 to 70%',
+    bloomseason: 'Summer',
+    colour: 'Red',
+    disease: 'Damping-off,\r\n' +
+      'Septoria leaf spot,\r\n' +
+      'Early blight,\r\n' +
+      'Bacterial leaf spot,\r\n' +
+      'Leaf curl,\r\n' +
+      'Mosaic'
+  },
+  {
+    name: 'Potato ',
+    soiltype: 'The potato can be grown almost on any type of soil, except saline and alkaline soils. loamy and sandy loam soils that are rich in organic matter, with good drainage and aeration, are the most suitable',
+    ph: '6 to 6.5',
+    sunexposure: 'The more sun, the better—at least six hours per day.\r\n' +
+      'Sun Exposure: Full sun\r\n',
+    temperature: '16-21°C',
+    humidity: 'around 95 percent relative humidity, or as high as possible without fully saturating the air,',
+    bloomseason: 'autumn is the main potato season. The crop duration is short about 100-120 days ',
+    colour: 'yellow, white, purple colored by anthocyanin, or r',
+    disease: 'Bacterial wilt,\r\n' +
+      'Septoria leaf spot,\r\n' +
+      'Late blight,\r\n' +
+      'Early blight,\r\n' +
+      'Black scurf,\r\n' +
+      'Black heart disorder,\r\n'
+  },
+  {
+    name: 'Brinjal',
+    soiltype: 'The brinjal plants can be grown in all types of soil varying from light sandy to heavy clay',
+    ph: ' 6.5 to 7.5.',
+    sunexposure: 'at least 6 to 7 hours of sunlight. Sunlight is very essential for the eggplants as it promotes the g',
+    temperature: 'It is very susceptible to frost. A daily mean temperature of 13-21 oC is most favorable for its successful production. The growth of the crop is severely affected when the temperature falls below 17 o',
+    humidity: 'Low humidity ',
+    bloomseason: "In the plants of Northern India, there are generally two sowing season's Vez, June to July for autumn crop and November for the spring-summer crop month of April. In South India, the brinjal can be grown round the year, the main sowing being done from July to August.",
+    colour: '',
+    disease: 'Damping-off, leaf spot, Alternaria leaf spot, verticillium wilt, Bacterial Wilt, Little leaf of  Brinjal, Mosaic of Brinjal '
+  },
+  {
+    name: 'Chilli',
+    soiltype: 'Chilli can be grown in all types of soils, but the sandy - loam, clay loam, and loamy soils ',
+    ph: '5.5 to 7',
+    sunexposure: '5-6 hours of sunlight every day.',
+    temperature: 'between 20⁰ to 25⁰C is perfect for the growth of chili. If the temperature goes above 37⁰C then the fruit development gets affected',
+    humidity: 'relative humidity varies from 50% to 70 %;',
+    bloomseason: 'Damping-off,\r\n' +
+      'Die-back and Anthracnose (fruit rot),\r\n' +
+      'Choeanephora blight/ wet rot,\r\n' +
+      'Mosaic complex,\r\n' +
+      'Powdery mildew,\r\n' +
+      'Cercospora leaf spot,\r\n' +
+      'Bacterial leaf spot,\r\n' +
+      'Alternaria leaf spot\r\n' +
+      'Fusarium wilt\r\n' +
+      '\r\n',
+    colour: 'red, orange, yellow or green. W',
+    disease: 'Alternaria leaf spot\r\n' +
+      'This is a common disease of chili occurring on the foliage at any stage of growth. The fungus attacks the foliage causing characteristic leaf spots and blight. Early blight is first observed on the plants as small, black lesions mostly on the older foliage.'
+  },
+   {
+    name: 'Spinach',
+    soiltype: 'well-drained soil rich in organic matter such as compost or composted manure',
+    ph: ' 6.5 to 7. ',
+    sunexposure: 'Sunlight - Sun to partial shade.',
+    temperature: '10°C - 22°C. ',
+    humidity: 'high relative humidity (90%–95% RH).',
+    bloomseason: 'Spinach is sown throughout the year. For the winter season, the best time for sowing is from September to October. For the spring season complete sowing from Mid-February to April.',
+    colour: 'Green',
+    disease: 'Downy mildew,\r\n' +
+      'Anthracnose,\r\n' +
+      'Cladosporium Leaf spot,\r\n' +
+      'Stemphylium leaf spot,\r\n' +
+      'Damping-off and root rot,\r\n'
+  },
+   {
+    name: 'Bitter gourd ',
+    soiltype: 'Bitter gourds require nutrient-rich well-draining soil mixed with aged-compost or manure ',
+    ph: '6.0- 7.0',
+    sunexposure: 'minimum six hours of bright sunlight every day ',
+    temperature: 'Bitter Gourd seed germination is 20°C',
+    humidity: 'High humidity ',
+    bloomseason: 'Summer',
+    colour: 'Green and white',
+    disease: 'Alternaria leaf blight,\r\n' +
+      'Anthracnose,\r\n' +
+      'Cercospora leaf spot,\r\n' +
+      'Downy Mildew,\r\n'
+  },
+   {
+    name: 'coriander',
+    soiltype: 'well drain soil',
+    ph: '6.2 to 6.8',
+    sunexposure: 'full  sun ',
+    temperature: '17 to 27',
+    humidity: '',
+    bloomseason: '',
+    colour: '',
+    disease: 'Powdery Mildew,\r\nWilt,\r\nStem gall,\r\nBlight disease,\r\nStem rot,\r\n\r\n\r\n"\r\n"'
+  },
+   {
+    name: 'Beet Root',
+    soiltype: '',
+    ph: '6.2 to 6.8',
+    sunexposure: 'cool and some sunlight',
+    temperature: '15.5 and 18.3°C',
+    humidity: '',
+    bloomseason: '',
+    colour: '',
+    disease: 'Beetroot Downy Mildew: Perenospora schachtti,\r\n' +
+      'Beetroot Leaf Spot: Cercospora beticola,\r\n' +
+      'Curly- top virus of Beetroot,\r\n' +
+      'Beet Yellows: Virus,\r\n'
+  },
+   {
+    name: 'Bottle Gourd',
+    soiltype: 'sandy loamy soil',
+    ph: '6.5 to 7.2',
+    sunexposure: 'full sunlight ',
+    temperature: '18- 22°C',
+    humidity: '',
+    bloomseason: '',
+    colour: '',
+    disease: 'Downy Mildew, Powdery  Mildew, Mosaic '
+  },
+ {
+    name: 'capsicum/bell pepper',
+    soiltype: 'clayey and loamy soil',
+    ph: '6.5 and 7',
+    sunexposure: 'full sunlight',
+    temperature: '21-25°C',
+    humidity: '',
+    bloomseason: '',
+    colour: '',
+    disease: 'Anthracnose , Powdery mildew , Bacterial wilt ,Leaf curl disease ,Thrips ,Aphids ,Mites'
+  },
+  {
+    name: 'okra',
+    soiltype: 'sandy, clayey ',
+    ph: '6 and 6.5',
+    sunexposure: 'full sunlight',
+    temperature: '20-30°C',
+    humidity: '',
+    bloomseason: '',
+    colour: '',
+    disease: 'Yellow Vein Mosaic Virus, Powdery mildew, Cercospora leaf spot, Root rot , Wilt'
+  }
+]

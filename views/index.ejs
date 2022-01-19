@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Plant Doctor</title>
+  <link rel="stylesheet" href="/static/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- this is the main page of the website -->
+  <section id="mainpage">
+    <!-- navba -->
+    <div class="bigcontainer">
+      <div class="head_container">
+        <div class="logo">
+          <img src="static/pictures/rodeo.png" alt="" id="logoimage">
+        </div>
+        <div class="navbar">
+        <ul class="navbarlist">
+        <li class="listitem"><a href="Home">Home</a></li>
+        <li class="listitem"><a href="Service">Services</a></li>
+        <li class="listitem"><a href="Team">Team</a></li> </ul>
+        </div>
+        <div class="links">
+          <i class='fas fa-user-plus' style='font-size:24px'></i>
+          <i class='fas fa-language' style='font-size:24px'></i>
+        </div>
+      </div>
+      <div class="image_container">
+        <div class="main_heading">
+          <h1>What are you planting ?</h1>
+        </div>
+        <div class="search">
+          <i class='fas fa-microphone' style='font-size:24px'></i>
+          <i class='fas fa-camera-retro' style='font-size:24px'></i>
+          <i class="fa fa-search" style='font-size:24px'></i>
+        </div>
+      </div>
+    </div>
+    <div id="chatbot">
+          <h4 style="color: beige;">chatbot</h4>
+    </div>
+  </section>
+<section>
+<div class="big_about">
+<div class="description">
+<h2>About our project </h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam saepe distinctio animi deleniti iste doloribus, commodi tenetur reprehenderit dicta aliquam! Enim quam unde illum!</p>
+</div>
+<div class="about_image">
+
+</div>
+</div>
+</section>
+  <section id="seconed_page">
+
+  </section>
+  <section id="thirdpage">
+    <!-- making the  card -->
+    <h1 id="vegetables_heading">VEGETABLES</h1>
+    <!-- making the 10 cards -->
+    <div id="vegcontainer">
+<% let j= 1 %>
+      <% results.forEach(function(item){ %>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+           <% let image1="/static/pictures/veg-" %>
+                
+                  <% let png=".png" %>
+                    <% let image=image1 + j + png %>
+
+                      <img src=<%=image %> alt="Avatar" style="width:160px;height:160px;">
+                      <p>
+                        <%= item.name %>
+                      </p>
+            </div>
+            <div class="flip-card-back">
+
+              <p>
+                <%= item.name %> thrive <%= item.name  %> in SEASON season. <%= item.name %> needs <%= item.soiltype %>
+                      soil . <%= item.name%> grows best with
+                        the <%= item.ph %> .<%= item.name %> needs<%= item.sunexposure %> sun. <%= item.name %> needs HUMIDITY humidity .
+                         <%= item.name %> most <%= item.colour %>
+                      colour . <%= item.name %> can cause the <%= item.disease %> .
+              </p>
+
+            </div>
+          </div>
+        </div>
+<% j = j + 1 %>
+          <% }); %> 
+
+    </div>
+  </section>
+
+<section>
+
+<div  id ="message_big_container">
+<div id="message_contain1">
+<h1>Providing the best solution for your plant</h1>
+</div>
+<div id="message_contain2">
+<form action="/getfeedback" method ="post" >
+<div id="formid">
+<div class="formdata"><input type="text" name = "username" placeholder = "Name"></<div>
+<div class="formdata"> <input type="email" placeholder= "Email " name="useremail" value=""></<div>
+<div class="formdata"> <input type="tel" placeholder="Phone" name ="userphonenumber"></<div>
+<div class="formdata"> <input type="text" placeholder="Subject" name="Subject" id="subject"> </<div>
+<div class="formdata"><textarea rows="3" cols="30"name ="message">Message</textarea></<div>
+<div class="formdata"><textarea rows="3" cols="30" name = "feedback" >Feedback</textarea></<div>
+<div class = "formdata"><button type = "submit" id ="submit_button" >Send</button></div>
+</div>
+
+</form>
+</div>
+</div>
+</section>
+
+  <footer id="footer_content">
+ <div id="smart_plant_doctor">
+ <h2>Smart Plant Doctor</h2>
+ <p> s adipisicing elit. Hic minima impedit officiis assumenda neque dicta corporis vero sed obcaecati, saepe dolore, error aliquam cum? Deserunt ratione laborum ab iste quia?</p>
+ <div class="follow">
+ 
+ </div>
+ </div>
+ <div id="usefullinks">
+ <h3>Useful Links</h3>
+ <ul class="list">
+ <li class="listiteml"><a href="Home">Home</a></li>
+ <li class="listiteml"> <a href="Services">Services </a></li>
+ <li class="listiteml"><a href="Contact">Contact</a></li>
+ </ul>
+ </div>
+ <div class="dev_big">
+ <h3>Developers</h3>
+ <div id ="developer">
+ <div class="devlist"><img src="../static/pictures/krupali.jpg" alt="" ><h5>Krupali Tandel</h5></div>
+ <div class="devlist"><img src="../static/pictures/arshita.jpeg" alt=""><h5>Arshita Anchaliya</h5></div>
+ <div class="devlist"><img src="../static/pictures/hrishika.jpeg" alt=""><h5>Hrishika Rai</h5></div>
+ <div class="devlist"><img src="../static/pictures/mubaraka.jpeg" alt=""><h5>Mubaraka Kunda</h5></div>
+ </div>
+ </div>
+ 
+  </footer>
+
+
+</body>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</html>

@@ -1,0 +1,349 @@
+*{
+  margin : 0px ;
+  padding : 0px ;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* main page styling */
+.bigcontainer{
+
+
+}
+.head_container{
+  /* border : 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  width : 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  
+  /* border : 2px solid red; */
+  width : 20%;
+}
+.links {
+  display : flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border : 2px solid red; */
+  width : 10%;
+}
+
+#logoimage {
+  height : 6rem ;
+  width :15rem;
+  margin-left : 1rem;
+} 
+.navbar {
+  width : 40%;
+}
+ .navbarlist{
+   list-style: none;
+   /* border : 2px solid red; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .listitem a {
+   color : rgb(3, 3, 3);
+   font-weight: bold ;
+   font-size: 20px ;
+   text-decoration: none;
+ }
+.image_container{
+  /* border: 2px solid red; */
+  height : 30rem;
+  background: url('../static/pictures/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+.main_heading h1{
+font-size: 3rem ;
+margin-bottom: 1rem ;
+color: #eaf0e5;
+}
+.search {
+  border-radius: 3rem ;
+  box-shadow: 9px 2px 25px 1px rgb(255 248 248);
+  /* border : 2px solid red; */
+  background-color: rgb(236 236 236);
+height : 3rem ; 
+width : 35rem ;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.search i {
+  margin :.3rem;
+}
+
+#chatbot {
+  /* border : 2px solid red ; */
+  width : 4rem ;
+  height : 4rem ;
+  border-radius : 5rem ;
+  float : right;
+ display: flex;  
+justify-content: center ;
+align-items: center;
+background: rgb(3, 46, 12);
+margin-right : 76px;
+margin-top : 70px ;
+box-shadow: 4px 3px 9px green;
+
+}
+
+.flip-card {
+  background-color: transparent;
+  
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color:#e6ffe4;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(12 152 18);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /* about page */
+.big_about {
+  border : 2px solid red ;
+
+}
+.description {
+  border : 2px solid red ; 
+
+}
+.description h2{
+
+}
+.description p{
+  
+}
+.about_image{
+  border : 2px solid red;
+
+}
+
+  #vegcontainer {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    width: auto;
+    
+    
+  }
+
+
+  #vegetables_heading{
+    text-align: center;
+    color :rgb(8, 122, 14);
+  }
+  
+  /* form section */
+  #message_big_container{
+    /* border : 2px solid red ; */
+    width : 100%;
+    height : 25rem ;
+    display : flex;
+    align-items: center ;
+    justify-content: center;
+    background: url("/static/pictures/back3.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+
+
+  }
+  #message_contain1{
+    /* border : 2px solid red ; */
+    border-radius: 3rem;
+width : 30%;
+height : 15rem ;
+display: flex;
+justify-content: center ;
+align-items: center;
+color: white ;
+background: #1d501a;
+opacity : 0.7 ;
+
+  }
+
+
+  #message_contain1 h1{
+    margin: 5rem;
+  }
+
+  #message_contain2{
+    border : 2px solid rgb(8, 7, 7) ;
+    border-radius: 3rem ;
+width : 30%;
+height : 15rem ;
+  }
+  
+  #formid {
+    display : flex;
+    justify-content: center ;
+    align-items: center;
+  }
+  
+  .formdata {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+align-content: space-around;
+    align-items: center;
+    margin: 0.2rem;
+  }
+
+  .formdata #submit_button{
+    width : 5rem ;
+    height : 2rem ;
+    background: #12630c;
+    color: white;
+    cursor: pointer;
+ outline: none;
+ border-radius: 3rem  ;
+  }
+
+  /* footer_section */
+
+  #footer_content{
+    margin-top: 3rem;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+height : 20rem;
+/* border : 2px solid red ; */
+background: url("/static/pictures/back5.png");
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+/* background-attachment: fixed; */
+}
+
+#smart_plant_doctor{
+    /* border : 2px solid red ; */
+    width : 30%;
+    height : 10rem;
+  }
+  #smart_plant_doctor p{
+    text-align: left;
+    margin:1rem;
+color : #e2fbd7 ;
+font-size: 20px;
+  }
+  #smart_plant_doctor h2{
+    text-align: left;
+margin:1rem;
+    color: #e2fbd7 ;
+  }
+  #usefullinks{
+    /* border : 2px solid red ; */
+    width :10%;
+    height: 10rem;
+  }
+  .list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+    /* align-items: center; */
+  }
+  #usefullinks h3 {
+    margin : 1rem;
+    color : #e2fbd7;
+  }
+  .listiteml a{
+    text-decoration: none ;
+    /* margin: 2rem; */
+    color: #e2fbd7;
+    font-size: 15px;
+    font-weight: 300;
+    
+  }
+  .listiteml{
+    margin: 1rem;
+  }
+  #developer {
+   
+    /* border : 2px solid red ; */
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .devlist {
+    border-radius: 3rem;
+    display: flex;
+    /* border : 2px solid red; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .devlist h5 {
+color : #e2fbd7;
+  }
+  .devlist img  {
+width : 3rem ;
+height : 3rem ;
+border-radius: 5rem;
+  }
+.dev_big{
+  display: flex;
+  width :30%;
+  height: 10rem;
+  /* border: 2px solid red ; */
+  flex-direction: column;
+  /* justify-content: center; */
+  
+}
+ .dev_big h3{
+   text-align: center;
+    color : #e2fbd7 ;
+    margin: 1rem;
+  }
