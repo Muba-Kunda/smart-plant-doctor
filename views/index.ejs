@@ -10,6 +10,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .open-button{
+  
+    margin : 3rem ;
+   position : fixed ;
+   right : 0px ;
+   border-radius : 4rem ;
+  
+  }
+
+  #mainbot {
+    display : none ;
+  }
+
+ .close-button{
+   margin : 3rem ;
+   position : fixed ;
+   right : 0px ;
+   border-radius : 4rem;
+  width : 4rem ;
+  hight : 4rem ;
+  display : none ;
+ }
+.search {
+  display : none ;
+}
+  </style>
 </head>
 
 <body>
@@ -24,8 +52,8 @@
         <div class="navbar">
         <ul class="navbarlist">
         <li class="listitem"><a href="Home">Home</a></li>
-        <li class="listitem"><a href="Service">Services</a></li>
-        <li class="listitem"><a href="Team">Team</a></li> </ul>
+        <li class="listitem"><a href="Services">Services</a></li>
+        <li class="listitem"><a href="aboutus">About Us</a></li> </ul>
         </div>
         <div class="links">
           <i class='fas fa-user-plus' style='font-size:24px'></i>
@@ -34,7 +62,7 @@
       </div>
       <div class="image_container">
         <div class="main_heading">
-          <h1>What are you planting ?</h1>
+          <h1>We Help Your Plant Thrive!</h1>
         </div>
         <div class="search">
           <i class='fas fa-microphone' style='font-size:24px'></i>
@@ -43,61 +71,35 @@
         </div>
       </div>
     </div>
-    <div id="chatbot">
-          <h4 style="color: beige;">chatbot</h4>
+    <div id="open">
+    <button class="open-button" onclick="openForm()">
+    <i class='far fa-comments icon' style='font-size:48px;color : black;'></i></button>
+    <button class="close-button" onclick = "closeform()">
+    <i class="fa fa-close closeicon" style="font-size:48px;color: black;"></i></button>
+    <iframe id = "mainbot" src='https://webchat.botframework.com/embed/ourTPKB1?s=YOUR_SECRET_HERE'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
     </div>
+   
+   
+    
   </section>
 <section>
-<div class="big_about">
-<div class="description">
-<h2>About our project </h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam saepe distinctio animi deleniti iste doloribus, commodi tenetur reprehenderit dicta aliquam! Enim quam unde illum!</p>
-</div>
-<div class="about_image">
 
-</div>
-</div>
 </section>
   <section id="seconed_page">
 
   </section>
   <section id="thirdpage">
     <!-- making the  card -->
-    <h1 id="vegetables_heading">VEGETABLES</h1>
+    <!-- <h1 id="vegetables_heading">VEGETABLES</h1> -->
     <!-- making the 10 cards -->
-    <div id="vegcontainer">
-<% let j= 1 %>
-      <% results.forEach(function(item){ %>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-           <% let image1="/static/pictures/veg-" %>
-                
-                  <% let png=".png" %>
-                    <% let image=image1 + j + png %>
 
-                      <img src=<%=image %> alt="Avatar" style="width:160px;height:160px;">
-                      <p>
-                        <%= item.name %>
-                      </p>
-            </div>
-            <div class="flip-card-back">
 
-              <p>
-                <%= item.name %> thrive <%= item.name  %> in SEASON season. <%= item.name %> needs <%= item.soiltype %>
-                      soil . <%= item.name%> grows best with
-                        the <%= item.ph %> .<%= item.name %> needs<%= item.sunexposure %> sun. <%= item.name %> needs HUMIDITY humidity .
-                         <%= item.name %> most <%= item.colour %>
-                      colour . <%= item.name %> can cause the <%= item.disease %> .
-              </p>
-
-            </div>
-          </div>
-        </div>
-<% j = j + 1 %>
-          <% }); %> 
-
+    <div class="tomato">
+    
+    <h2>Tomato</h2>
+   <a href="tomato">Know More </a>
     </div>
+    
   </section>
 
 <section>
@@ -112,7 +114,6 @@
 <div class="formdata"><input type="text" name = "username" placeholder = "Name"></<div>
 <div class="formdata"> <input type="email" placeholder= "Email " name="useremail" value=""></<div>
 <div class="formdata"> <input type="tel" placeholder="Phone" name ="userphonenumber"></<div>
-<div class="formdata"> <input type="text" placeholder="Subject" name="Subject" id="subject"> </<div>
 <div class="formdata"><textarea rows="3" cols="30"name ="message">Message</textarea></<div>
 <div class="formdata"><textarea rows="3" cols="30" name = "feedback" >Feedback</textarea></<div>
 <div class = "formdata"><button type = "submit" id ="submit_button" >Send</button></div>
@@ -126,7 +127,9 @@
   <footer id="footer_content">
  <div id="smart_plant_doctor">
  <h2>Smart Plant Doctor</h2>
- <p> s adipisicing elit. Hic minima impedit officiis assumenda neque dicta corporis vero sed obcaecati, saepe dolore, error aliquam cum? Deserunt ratione laborum ab iste quia?</p>
+ <p>Our application provides the suggestions to the ones who face issues in their gardening stuff via a chatbot for thriving your plant</p>
+ <p>It also diagnoses the plant condition by analyzing the images that the user provides and gives the necessary recommendations.</p>
+ <p id = "quote">Gardening nourishes the body ,<br>Elevates the spirit ,<br>And makes the world a better beautiful place.</p>
  <div class="follow">
  
  </div>
@@ -154,5 +157,13 @@
 
 </body>
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script>
+let chatbot = document.getElementByID('chatbot');
+
+chatbot.addEventListener('onclick' , ()=>{
+
+})
+
+</script>
 
 </html>

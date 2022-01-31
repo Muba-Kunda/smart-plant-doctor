@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<style>
+ *{
+     font-family: 'Roboto', sans-serif;
+ }
+.big_service{
+    width : 100%;
+   
+    display : flex;
+    flex-direction : column;
+    justify-content: center ;
+    align-items : center ;
+    background : url('../static/pictures/back3.png');
+   
+}
+.service_container{
+   
+    width :70rem ;
+    display: flex ;
+    justify-content : center ;
+    align-items : center ;
+
+}
+.services{
+   border : 2px solid black ;
+    margin : 4rem ;
+    background :#dceedc;
+    color : #03410d ;
+    border-radius : 4rem ;
+}
+.services p , .services h1 , .services ul{
+    padding : 1rem ;
+}
+
+.heading {
+    height : 25rem ;
+    border-radius : 4rem ;
+  
+  display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    background :  #042f04;
+    padding : 2rem ;
+}
+.heading h1 {
+    color : white;
+}
+.navbar {
+    
+    width : 30rem ;
+    height : 4rem ;
+}
+.navlist{
+    list-style :none;
+    display: flex;
+    justify-content : space-around ;
+    align-items : center ;
+}
+
+.head_container{
+  /* border : 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  width : 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  
+  /* border : 2px solid red; */
+  width : 20%;
+}
+.links {
+  display : flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border : 2px solid red; */
+  width : 10%;
+}
+
+#logoimage {
+  height : 6rem ;
+  width :15rem;
+  margin-left : 1rem;
+} 
+.navbar {
+  width : 40%;
+}
+ .navbarlist{
+   list-style: none;
+   /* border : 2px solid red; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .listitem a {
+   color : rgb(3, 3, 3);
+   font-weight: bold ;
+   font-size: 20px ;
+   text-decoration: none;
+ }
+
+</style>
+<body>
+<div class="head_container">
+        <div class="logo">
+          <img src="static/pictures/rodeo.png" alt="" id="logoimage">
+        </div>
+        <div class="navbar">
+        <ul class="navbarlist">
+        <li class="listitem"><a href="Home">Home</a></li>
+        <li class="listitem"><a href="Services">Services</a></li>
+        <li class="listitem"><a href="aboutus">About Us</a></li> </ul>
+        </div>
+        <div class="links">
+          <i class='fas fa-user-plus' style='font-size:24px'></i>
+          <i class='fas fa-language' style='font-size:24px'></i>
+        </div>
+      </div>
+<div class="big_service">
+<div class="service_container">
+<div class="heading">
+ <h1> If you are plant lovers and new to gardening , then don't worry we will be helping you through out this journey. </h1>
+
+</div>
+<div class="services">
+ <h1>Services provided by us</h1> 
+   <p> 
+     Our website  will be providing the detail information about different plants.
+    Details like , What steps to be followed to grow any plant.
+       How much water, sunlight should be preferrable for any plant.
+    </p> 
+<ul>
+<li class="listitem">There is also the chatbot services which will help the user by answering the different questions related to Gardening .</li>
+<li class="listitem"> User can  give input (ask questions) to the chatbot through voice command also.</li>
+<li class="listitem"> User can also click photo of the  affected plant and upload it to the chatbot and chatbot will help user in diagnosing the disease and provide the further suggestions for its prevention.</li>
+</ul>
+
+</div>
+</div>
+</div>
+   
+
+     
+</body>
+</html>

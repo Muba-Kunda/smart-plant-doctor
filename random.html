@@ -1,0 +1,33 @@
+<div id="vegcontainer">
+    <% let j= 1 %>
+      <% results.forEach(function(item){ %>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+           <% let image1="/static/pictures/veg-" %>
+                
+                  <% let png=".png" %>
+                    <% let image=image1 + j + png %>
+
+                      <img src=<%=image %> alt="Avatar" style="width:160px;height:160px;">
+                      <p>
+                        <%= item.name %>
+                      </p>
+            </div>
+            <div class="flip-card-back">
+
+              <p>
+                <%= item.name %> thrive <%= item.name  %> in SEASON season. <%= item.name %> needs <%= item.soiltype %>
+                      soil . <%= item.name%> grows best with
+                        the <%= item.ph %> .<%= item.name %> needs<%= item.sunexposure %> sun. <%= item.name %> needs HUMIDITY humidity .
+                         <%= item.name %> most <%= item.colour %>
+                      colour . <%= item.name %> can cause the <%= item.disease %> .
+              </p>
+
+            </div>
+          </div>
+        </div>
+    <% j = j + 1 %>
+          <% }); %> 
+
+    </div>

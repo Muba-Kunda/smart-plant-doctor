@@ -102,6 +102,25 @@ box-shadow: 4px 3px 9px green;
 
 }
 
+/* third page  */
+.tomato {
+  border : 2px solid rgb(0, 0, 0);
+  border-radius: 3rem ;
+  height :15rem ;
+  width : 15rem ;
+  margin : 3rem ;
+  background: url("../static/pictures/veg-1.png");
+  background-repeat: no-repeat;
+}
+
+.tomato h2 {
+  margin-left : 1.4rem ;
+  color :rgb(3, 49, 13)
+}
+.tomato a {
+  margin-left : 1.4rem ;
+  text-decoration: none ;
+}
 .flip-card {
   background-color: transparent;
   
@@ -256,7 +275,7 @@ align-content: space-around;
     display : flex;
     justify-content: center;
     align-items: center;
-height : 20rem;
+height : 25rem;
 /* border : 2px solid red ; */
 background: url("/static/pictures/back5.png");
 background-position: top;
@@ -274,12 +293,18 @@ background-size: cover;
     text-align: left;
     margin:1rem;
 color : #e2fbd7 ;
-font-size: 20px;
+font-size : 16px ;
+
+
+  }
+  #quote {
+    color : white;
   }
   #smart_plant_doctor h2{
     text-align: left;
 margin:1rem;
     color: #e2fbd7 ;
+   
   }
   #usefullinks{
     /* border : 2px solid red ; */
